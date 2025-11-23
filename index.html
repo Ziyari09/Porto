@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     
+    <style>
+        .hero-img { max-width: 250px; border-radius: 10%; transition: .3s; }
+        .hero-img:hover { transform: scale(1.05); }
+        .section-title { font-weight: bold; font-size: 2rem; margin-bottom: 20px; }
+        .portfolio-card { transition: .3s; cursor: pointer; }
+        .portfolio-card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,.15); }
+    </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg bg-light shadow-sm fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Webku.id</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<section id="home" class="container py-5" style="padding-top: 140px !important;">
+    <div class="row align-items-center ms-lg-5">
+        <div class="col-lg-6 text-center text-lg-start">
+            <h1 class="fw-bold">Hi, I am Al<br><span class="text-primary">Web Developer</span></h1>
+            <p>Saya Mahasiswa Stmik Indonesia Banjarmasin</p>
+            <button class="btn btn-primary  m-lg-0 m-5" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Me</button>
+        </div>
+        
+        <div class="col-lg-6 text-center">
+            <img src="WhatsApp Image 2025-08-13 at 16.37.23.jpeg" class="hero-img" alt="profile image">
+        </div>
+    </div>
+</section>
+
+
+
+<section id="about" class="bg-light py-5">
+    <div class="container">
+        <h2 class="section-title text-center">About Me</h2>
+        <p class="text-center mb-5">A brief introduction about myself</p>
+
+        <div class="row g-3 text-center">
+            <div class="col-md-4 col-6">
+                <div class="p-3 bg-white shadow-sm rounded">
+                    <p class="fw-bold">Full Name</p>
+                    <p>Al Kautsar Diprajaya</p>
+                </div>
+        </div>
+            <div class="col-md-4 col-6">
+                <div class="p-3 bg-white shadow-sm rounded">
+                    <p class="fw-bold">Last Education</p>
+                    <p class="">Smkn 1 Tanjung </p>
+                </div></div>
+            <div class="col-md-4 col-6">
+                <div class="p-3 bg-white shadow-sm rounded">
+                    <p class="fw-bold">Pekerjaan</p>
+                    <p>Front End Web </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-6">
+                <div class="p-3 bg-white shadow-sm rounded">
+                    <p class="fw-bold">Contact end Sosmed</p>
+                    <p class="">algeming8@gmail.com</p>
+                    <p class="">Sar_lain08</p>
+                </div></div>
+            <div class="col-md-4 col-6">
+                <div class="p-3 bg-white shadow-sm rounded">
+                    <p class="fw-bold">Hobby</p>
+                    <p>Playing BasketBall</p>
+                    <p>Coding </p>
+                </div></div>
+            <div class="col-md-4 col-6">
+                <div class="p-3 bg-white shadow-sm rounded">
+                    <p class="fw-bold">Address</p>
+                    <p>Jl Sungai Jingah Komplek Wasaka </p>
+                </div></div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-5  bg-white">
+    <div class="container ">
+        <h2 class="section-title text-center">Highlight</h2>
+
+       <div id="carouselExample" class="carousel slide mt-4 w-50  mx-auto" data-bs-ride="carousel">
+
+            <div class="carousel-inner ">
+                <div class="carousel-item active ">
+                    <img  src="img copy/WhatsApp Image 2025-11-22 at 13.04.31.jpeg" class="d-block w-100 rounded" alt="slide1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img copy/WhatsApp Image 2025-11-22 at 21.51.49.jpeg" class="d-block w-100 rounded" alt="slide2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/WhatsApp Image 2025-11-22 at 13.04.32.jpeg" class="d-block w-100 rounded" alt="slide3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+<section id="portfolio" class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center">Portfolio</h2>
+
+        <div class="row g-4 mt-4">
+            <div class="col-md-4">
+                <div class="card portfolio-card" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                    <img src="img copy/Screenshot from 2025-11-23 01-51-20.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Membuat Form Login</h5>
+                        <p class="card-text">Menggunakan html Css dan bootstrap</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card portfolio-card" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                    <img src="img copy/Screenshot from 2025-11-23 01-52-46.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Membuat Web Responsif </h5>
+                        <p class="card-text">Menggunakan Html Css Dan bootstrap</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card portfolio-card" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                    <img src="img copy/Screenshot from 2025-11-23 01-54-33.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Membuat Table </h5>
+                        <p class="card-text">Menggunakan Html</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="modal fade" id="contactModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Contact Me</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <label>Email</label>
+        <input type="email" class="form-control" placeholder="your@mail.com">
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button class="btn btn-primary">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="portfolioModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Project Detail</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center mb-3">
+        <img src="img copy/Screenshot from 2025-11-23 01-51-20.png" class="img-fluid mb-3">
+        <img src="img copy/Screenshot from 2025-11-23 01-52-46.png" class="img-fluid mb-3">
+        <img src="img copy/Screenshot from 2025-11-23 01-54-33.png" class="img-fluid mb-3">
+        <p>Saya Sudah Membuat 2-3 Project Lumayan Seru Mendesign Menggunakan Html css dan tidak lupa Framework Boostrap</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
